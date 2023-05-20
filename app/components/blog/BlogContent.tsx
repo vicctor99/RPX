@@ -2,8 +2,6 @@
 
 import Image from "next/image";
 import Button from "../Button";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 
 const blogData = [
   {
@@ -27,19 +25,11 @@ const blogData = [
 ];
 
 const BlogContent = () => {
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
   return (
     <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8 py-7">
       {blogData.map((data, index) => (
-        <motion.div
+        <div
           key={index}
-          ref={ref}
-          initial={{ opacity: 0, y: 20 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5, delay: index * 0.2 }}
           className="bg-white rounded-lg p-6 shadow-md flex flex-col justify-between"
         >
           <Image
@@ -57,7 +47,7 @@ const BlogContent = () => {
           <p className="mb-6 font-semibold text-md">{data.text}</p>
           <span className="border-[1px] mb-4"></span>
           <Button name="Continuar Lendo" />
-        </motion.div>
+        </div>
       ))}
     </div>
   );
