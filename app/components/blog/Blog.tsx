@@ -10,7 +10,7 @@ const Blog = () => {
     threshold: 0.1,
   });
   return (
-    <div className="bg-gray-200 py-10 mx-auto xl:px-72 md:px-10 sm:px-5 px-5 w-full">
+    <div className="bg-gray-200 py-10 mx-auto px-5 md:px-28 lg:px-32 xl:px-72 w-full">
       <motion.div
         ref={ref}
         initial={{ opacity: 0, y: 20 }}
@@ -18,7 +18,9 @@ const Blog = () => {
         transition={{ duration: 0.5 }}
         className="flex flex-col text-center"
       >
-        <h1 className="text-4xl uppercase font-black text-red-600">Notícias</h1>
+        <h1 className="text-3xl sm:text-4xl uppercase font-black text-red-600">
+          Notícias
+        </h1>
         <p className="text-slate-900">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, iste?
         </p>

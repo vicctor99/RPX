@@ -7,7 +7,7 @@ import Links from "./Links";
 import Logo from "./Logo";
 
 const Navbar = () => {
-  const isSmallerScreen = useMediaQuery({ maxWidth: 766 });
+  const isSmallerScreen = useMediaQuery({ maxWidth: 1024 });
   return (
     <div className="w-full fixed bg-white border-b-[1px] z-10 shadow-lg py-3 md:py-6">
       <div>

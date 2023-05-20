@@ -13,7 +13,7 @@ const Features = () => {
   return (
     <div
       ref={ref}
-      className="bg-gray-200 py-10 mx-auto xl:px-72 md:px-10 sm:px-5 px-5 w-full h-fit"
+      className="bg-gray-200 py-10 mx-auto px-5 md:px-28 lg:px-32 xl:px-72 w-full h-fit"
     >
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -25,7 +25,7 @@ const Features = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-4xl uppercase font-bold text-red-600"
+          className="text-3xl sm:text-4xl uppercase font-bold text-red-600"
         >
           Nossos Serviços
         </motion.h1>

@@ -22,9 +22,9 @@ const About = () => {
   return (
     <div
       ref={ref}
-      className="w-full bg-white flex items-center h-[80%] border-t-[1px] border-b-[1px] border-zinc-300"
+      className="w-full bg-white flex items-center border-t-[1px] border-b-[1px] text-center sm:text-start py-10 sm:py-20 border-zinc-300"
     >
-      <div className="xl:px-72 md:px-10 sm:px-5 px-5 grid items-center lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-8">
+      <div className="px-5 md:px-28 lg:px-32 xl:px-72 grid items-center lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-8">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={animationStarted ? { opacity: 1, x: 0 } : {}}

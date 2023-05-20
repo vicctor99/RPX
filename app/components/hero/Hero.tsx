@@ -25,7 +25,7 @@ const Hero = () => {
       initial={{ opacity: 0 }}
       animate={animationStarted ? { opacity: 1 } : {}}
       transition={{ duration: 1 }}
-      className="bg-blue-950 bg-[url('/images/pexels.jpg')] bg-bottom bg-cover pt-20 w-full h-full flex flex-col justify-center mx-auto xl:px-72 md:px-10 sm:px-5 px-5"
+      className="bg-blue-950 bg-[url('/images/pexels.jpg')] bg-bottom bg-cover pt-20 w-full h-full flex flex-col justify-center mx-auto px-5 md:px-28 lg:px-32 xl:px-72"
     >
       <div className="flex justify-center">
         <div className="flex flex-col items-center">
@@ -33,7 +33,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={animationStarted ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.5 }}
-            className="font-semibold uppercase text-lg text-neutral-100 self-end"
+            className="font-semibold uppercase text-md sm:text-lg text-neutral-100 self-end"
           >
             Assessoria de Importação
           </motion.h2>
@@ -42,7 +42,7 @@ const Hero = () => {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={animationStarted ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.8, delay: 1 }}
-              className="font-bold uppercase xl:text-8xl lg:text-7xl md:text-6xl sm:text-6xl text-4xl text-neutral-100 bg-gray-500 bg-opacity-20 backdrop-blur-sm shadow-lg border-[4px] p-8 rounded-sm text-center"
+              className="font-bold uppercase sm:text-8xl text-4xl text-neutral-100 bg-gray-500 bg-opacity-20 backdrop-blur-sm shadow-lg border-[2px] sm:p-8 p-4 rounded-sm text-center"
             >
               Global RPX TRADING
             </motion.h1>
@@ -51,7 +51,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={animationStarted ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 2 }}
-            className="md:text-2xl sm:2xl text-3xl text-neutral-100 text-center py-10"
+            className="text-2xl sm:text-4xl text-neutral-100 text-center py-10"
           >
             Especializada na construção de relações comerciais internacionais
             positivas e confiáveis.

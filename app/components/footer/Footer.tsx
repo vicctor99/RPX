@@ -4,7 +4,7 @@ import { FiMail, FiPhoneCall } from "react-icons/fi";
 
 const Footer = () => {
   return (
-    <div className="bg-zinc-900 border-t-[2px] border-gray-400 py-10 mx-auto xl:px-72 md:px-10 sm:px-5 px-5 w-full">
+    <div className="bg-zinc-900 border-t-[2px] border-gray-400 py-10 mx-auto px-5 md:px-28 lg:px-32 xl:px-72 w-full">
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-y-8 md:grid-cols-3 sm:grid-cols-2 text-white">
         <div className="flex flex-col">
           <h1 className="text-lg font-semibold uppercase">Conheça a RPX</h1>

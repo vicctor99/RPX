@@ -1,26 +1,26 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+  purge: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./app/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: false,
   theme: {
-    theme: {
-      screens: {
-        sm: "640px",
-        // => @media (min-width: 640px) { ... }
-
-        md: "768px",
-        // => @media (min-width: 768px) { ... }
-
-        lg: "1024px",
-        // => @media (min-width: 1024px) { ... }
-
-        xl: "1280px",
-        // => @media (min-width: 1280px) { ... }
+    screens: {
+      sm: "640px",
+      md: "1024px",
+      lg: "1360px",
+      xl: "1920px",
+    },
+    extend: {
+      spacing: {
+        5: "1.25rem",
+        30: "7.5rem",
+        40: "10rem",
+        72: "18rem",
       },
     },
   },
+  variants: {},
   plugins: [],
 };

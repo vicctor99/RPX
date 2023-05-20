@@ -2,7 +2,7 @@
 
 const UnderFooter = () => {
   return (
-    <div className="bg-zinc-900 border-t-[1px] border-zinc-800 py-5 mx-auto xl:px-72 md:px-10 sm:px-5 px-5 w-full">
+    <div className="bg-zinc-900 border-t-[1px] border-zinc-800 py-5 mx-auto px-5 md:px-28 lg:px-32 xl:px-72 w-full">
       <div className="flex text-center justify-between items-center xl:flex-row lg:flex-row md:flex-row sm:flex-col flex-col">
         <div className="text-zinc-500 font-light text-sm">
           Av. João Sacavem, 571 - Sala 804 - Centro - Navegantes - SC
