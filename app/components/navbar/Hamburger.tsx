@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useState } from "react";
 import { FiMenu } from "react-icons/fi";
 
@@ -22,26 +21,21 @@ const Hamburger = () => {
 
       {isOpen && (
         <div className="absolute top-12 bg-white shadow-md rounded-md text-blue-950 font-semibold">
-          <ul className="flex flex-col justify-center">
-            <li className="hover:bg-gray-200">
-              <Link href="/" className="block p-4">
+          <ul className="flex flex-col justify-center text-center">
+            <li className="hover:bg-gray-200 px-8">
+              <a href="#home" className="block py-4">
                 Home
-              </Link>
+              </a>
             </li>
-            <li className="hover:bg-gray-200">
-              <Link href="/servicos" className="block p-4">
-                Serviços
-              </Link>
+            <li className="hover:bg-gray-200 px-8">
+              <a href="#home" className="block py-4">
+                Sobre
+              </a>
             </li>
-            <li className="hover:bg-gray-200">
-              <Link href="/importacao" className="block p-4">
-                Importação
-              </Link>
-            </li>
-            <li className="hover:bg-gray-200 ">
-              <Link href="/consultoria" className="block p-4">
-                Consultoria
-              </Link>
+            <li className="hover:bg-gray-200 px-8">
+              <a href="#home" className="block py-4">
+                Notícias
+              </a>
             </li>
           </ul>
         </div>

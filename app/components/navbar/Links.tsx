@@ -9,16 +9,12 @@ const navLinks = [
     href: "/",
   },
   {
-    title: "Serviços",
-    href: "/servicos",
+    title: "Sobre nós",
+    href: "/",
   },
   {
-    title: "Importação",
-    href: "/importacao",
-  },
-  {
-    title: "Consultoria",
-    href: "/consultoria",
+    title: "Notícias",
+    href: "/",
   },
 ];
 
@@ -38,7 +34,7 @@ const Links = () => {
         ))}
         <div>
           <a
-            href="#"
+            href="/"
             className="flex items-center gap-1 hover:text-red-500 transition duration-200 ease-in-out"
           >
             <FiPhoneCall />

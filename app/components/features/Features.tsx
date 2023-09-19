@@ -11,8 +11,9 @@ const Features = () => {
   });
 
   return (
-    <div
+    <section
       ref={ref}
+      id="servicos"
       className="bg-gray-200 py-10 mx-auto px-5 md:px-28 lg:px-32 xl:px-72 w-full h-fit"
     >
       <motion.div
@@ -45,7 +46,7 @@ const Features = () => {
       </motion.div>
 
       <FeaturesContent />
-    </div>
+    </section>
   );
 };
 

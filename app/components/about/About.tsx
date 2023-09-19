@@ -20,16 +20,17 @@ const About = () => {
   }, [inView, animationStarted]);
 
   return (
-    <div
+    <section
       ref={ref}
-      className="w-full bg-white flex items-center border-t-[1px] border-b-[1px] text-center sm:text-start py-10 sm:py-20 border-zinc-300"
+      id="sobre"
+      className="w-full bg-[url('/images/darkbg.jpg')] bg-center bg-cover h-full flex items-center border-t-[1px] border-b-[1px] text-center sm:text-start py-10 sm:py-60 border-zinc-300"
     >
       <div className="px-5 md:px-28 lg:px-32 xl:px-72 grid items-center lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-8">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={animationStarted ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="flex items-center bg-[url('/images/pexels.jpg')] bg-center bg-cover h-full"
+          className="flex items-centerpx-32 bg-[url('/images/logo.png')] bg-cover h-full bg-no-repeat bg-left"
         ></motion.div>
         <motion.div
           initial={{ opacity: 0, x: 20 }}
@@ -41,22 +42,21 @@ const About = () => {
             initial={{ opacity: 0 }}
             animate={animationStarted ? { opacity: 1 } : {}}
             transition={{ duration: 0.5 }}
-            className="border-t-[5px] border-red-600 w-[120px]"
+            className="border-t-[5px] border-red-600 md:w-[120px] w-full "
           ></motion.span>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={animationStarted ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-5xl font-black uppercase text-slate-900"
+            className="text-5xl font-black uppercase text-white"
           >
-            Saiba mais sobre a nossa{" "}
-            <span className="text-red-600">Empresa</span>
+            Sobre nossa <span className="text-red-600">Empresa</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={animationStarted ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="text-gray-700"
+            className="text-gray-200 text-justify md:text-start text-xl"
           >
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Consequatur adipisci sapiente earum laboriosam quod expedita velit
@@ -67,7 +67,7 @@ const About = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={animationStarted ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.6 }}
-            className="text-gray-700"
+            className="text-gray-200 text-justify md:text-start text-xl"
           >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eius
             culpa at aliquid quasi voluptate ullam unde, molestias aliquam, iure
@@ -82,7 +82,7 @@ const About = () => {
           </motion.div>
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -9,7 +9,7 @@ import Logo from "./Logo";
 const Navbar = () => {
   const isSmallerScreen = useMediaQuery({ maxWidth: 1024 });
   return (
-    <div className="w-full fixed bg-white border-b-[1px] z-10 shadow-lg py-3 md:py-6">
+    <nav className="w-full fixed bg-white border-b-[1px] z-10 shadow py-3 md:py-6">
       <div>
         <Container>
           <div className="flex flex-row items-center justify-between gap-3 md:gap-0">
@@ -19,7 +19,7 @@ const Navbar = () => {
           </div>
         </Container>
       </div>
-    </div>
+    </nav>
   );
 };
 

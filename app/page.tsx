@@ -10,7 +10,7 @@ import UnderFooter from "./components/underfooter/UnderFooter";
 
 export default function Home() {
   return (
-    <div className="h-screen">
+    <main className="h-screen">
       <Hero />
       <Features />
       <About />
@@ -18,6 +18,6 @@ export default function Home() {
       <Footer />
       <SocialsFooter />
       <UnderFooter />
-    </div>
+    </main>
   );
 }
