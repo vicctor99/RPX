@@ -51,7 +51,7 @@ const Hero = () => {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={animationStarted ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.8, delay: 1 }}
-              className="text-neutral-100 md:text-2xl text-xl text-center font-medium mt-4"
+              className="text-neutral-100 md:text-2xl text-lg text-center font-medium mt-4"
             >
               Facilitamos a importação, para que você possa expandir seus
               negócios globalmente com confiança.
