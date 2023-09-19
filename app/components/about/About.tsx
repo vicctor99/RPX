@@ -23,7 +23,7 @@ const About = () => {
     <section
       ref={ref}
       id="sobre"
-      className="w-full bg-[url('/images/darkbg.jpg')] bg-center bg-cover h-full flex items-center border-t-[1px] border-b-[1px] text-center sm:text-start py-10 sm:py-60 border-zinc-300"
+      className="w-full bg-[url('/images/darkbg.jpg')] bg-center bg-cover h-fit flex items-center border-t-[1px] border-b-[1px] text-center sm:text-start py-10 sm:py-60 border-zinc-300"
     >
       <div className="px-5 md:px-28 lg:px-32 xl:px-72 grid items-center lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-8">
         <motion.div
@@ -48,7 +48,7 @@ const About = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={animationStarted ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-5xl font-black uppercase text-white"
+            className="md:text-5xl text-4xl font-black uppercase text-white"
           >
             Sobre nossa <span className="text-red-600">Empresa</span>
           </motion.h1>
@@ -56,7 +56,7 @@ const About = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={animationStarted ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="text-gray-200 text-justify md:text-start text-xl"
+            className="text-gray-200 text-start text-lg"
           >
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Consequatur adipisci sapiente earum laboriosam quod expedita velit
@@ -67,7 +67,7 @@ const About = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={animationStarted ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.6 }}
-            className="text-gray-200 text-justify md:text-start text-xl"
+            className="text-gray-200 text-start text-lg"
           >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eius
             culpa at aliquid quasi voluptate ullam unde, molestias aliquam, iure
